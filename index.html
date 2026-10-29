@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cubuno — Tidy photos the fun way</title>
+    <meta
+      name="description"
+      content="Cubuno turns photo tidy into a playful habit. Swipe to keep, delete, or favorite — memories stay on your device."
+    />
+    <meta property="og:title" content="Cubuno" />
+    <meta
+      property="og:description"
+      content="Tidy photos the fun way. Swipe, level up, keep the memories that matter."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cubuno.com/" />
+    <meta property="og:image" content="https://cubuno.com/assets/app-icon.png" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preload" as="image" href="assets/mascot.png" />
+    <link rel="preload" as="image" href="assets/mascot-smile.png" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a class="nav-brand" href="/">
+          <img src="assets/app-icon.png" alt="" width="36" height="36" />
+          Cubuno
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#how">How it works</a>
+          <a href="#privacy">Privacy</a>
+          <a href="/support.html">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="wrap hero-content">
+        <div>
+          <h1 class="brand-mark">Cubuno</h1>
+          <p class="hero-line">Tidy photos the fun way</p>
+          <p class="hero-sub">
+            Swipe through your camera roll, keep what matters, and build a streak —
+            without uploading your memories.
+          </p>
+          <div class="cta-row">
+            <span class="btn btn-store" aria-disabled="true">
+              App Store · Coming soon
+            </span>
+            <span class="btn btn-store" aria-disabled="true">
+              Google Play · Coming soon
+            </span>
+          </div>
+          <p class="cta-note">
+            Cubuno is coming to iPhone and Android.
+            <a href="#how">See how it works →</a>
+          </p>
+        </div>
+        <div class="hero-visual" data-mascot>
+          <div class="mascot-bob">
+            <img
+              class="mascot-open"
+              src="assets/mascot.png"
+              alt="Cubuno bear mascot"
+              width="720"
+              height="720"
+              decoding="async"
+            />
+            <img
+              class="mascot-smile"
+              data-mascot-smile
+              src="assets/mascot-smile.png"
+              alt=""
+              width="720"
+              height="720"
+              decoding="async"
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <div class="wrap">
+        <p class="section-kicker">How it works</p>
+        <h2 class="section-title">A few swipes. Clearer albums.</h2>
+        <p class="section-lead">
+          Cubuno makes photo tidy feel light — short sessions, playful progress, real
+          control over what stays.
+        </p>
+        <ol class="steps">
+          <li>
+            <strong>Pick a stretch of time</strong>
+            <p>Open a month, a week, or a quick random round.</p>
+          </li>
+          <li>
+            <strong>Swipe to decide</strong>
+            <p>Keep, delete, or favorite — one photo at a time.</p>
+          </li>
+          <li>
+            <strong>Keep the streak</strong>
+            <p>Earn XP, light your flame, and make tidy a habit.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section privacy" id="privacy">
+      <div class="wrap privacy-grid">
+        <div>
+          <p class="section-kicker">On your device</p>
+          <h2 class="section-title">Your photos stay yours.</h2>
+          <p class="section-lead">
+            Cubuno organizes the library already on your phone. We don’t run a Cubuno
+            account, and we don’t upload your albums to our servers.
+          </p>
+          <div class="privacy-note">
+            Privacy Policy &amp; Terms are published by Pandobal Limited at
+            <a href="https://pandobal.com/privacy" rel="noopener">pandobal.com/privacy</a>
+            and
+            <a href="https://pandobal.com/terms" rel="noopener">pandobal.com/terms</a>.
+          </div>
+        </div>
+        <div class="app-card">
+          <img src="assets/app-icon.png" alt="Cubuno app icon" width="192" height="192" />
+          <div>
+            <h3>Cubuno</h3>
+            <p>Photo tidy · gamified · local-first</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <div>
+          <strong>Cubuno</strong>
+          <p style="margin: 0.35rem 0 0">
+            A product of Pandobal Limited (Hong Kong)
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="/support.html">Support</a>
+          <a href="https://pandobal.com/privacy" rel="noopener">Privacy</a>
+          <a href="https://pandobal.com/terms" rel="noopener">Terms</a>
+          <a href="mailto:hello@pandobal.com">hello@pandobal.com</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/mascot.js" defer></script>
+  </body>
+</html>
