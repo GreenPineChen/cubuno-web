@@ -98,6 +98,58 @@ a {
   color: var(--ink);
 }
 
+.lang-select-wrap {
+  display: inline-flex;
+  align-items: center;
+  /* 不要额外 margin，间距完全交给 .nav-links 的 gap */
+  margin: 0;
+  padding: 0;
+}
+
+/* 与导航文字同字号/字重/颜色，系统 select 自带内边距要压掉 */
+.lang-select {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%234a4a4a' d='M1 1.1 5 5l4-3.9L7.9.2 5 3.1 2.1.2z'/%3E%3C/svg%3E")
+    no-repeat right center / 8px;
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: inherit;
+  height: auto;
+  min-height: 0;
+  min-width: 0;
+  padding: 0 0.85rem 0 0;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.lang-select:hover {
+  color: var(--ink);
+}
+
+.lang-select:focus {
+  outline: none;
+  color: var(--ink);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* —— Hero（对齐 App：薄荷浅底 + 深字 + 橙 CTA）—— */
 .hero {
   position: relative;
@@ -394,11 +446,40 @@ a {
 
 .steps {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
   margin-top: 2.25rem;
   list-style: none;
   padding: 0;
+}
+
+.fun-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 2.25rem;
+}
+
+.fun-points article {
+  padding: 1.25rem 1.2rem 1.3rem;
+  background-image: linear-gradient(180deg, #fff, #fbfefe);
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow);
+}
+
+.fun-points strong {
+  display: block;
+  font-size: 1.08rem;
+  margin-bottom: 0.35rem;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.fun-points p {
+  margin: 0;
+  color: var(--ink-body);
+  font-size: 0.96rem;
 }
 
 .steps li {
@@ -576,6 +657,82 @@ a {
   font-weight: 650;
 }
 
+/* —— Legal docs —— */
+.legal-wrap {
+  max-width: 720px;
+}
+
+.legal-kicker {
+  margin: 0 0 0.5rem;
+  color: var(--action-deep);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.legal-meta {
+  margin: -0.35rem 0 2rem;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+}
+
+.legal h2 {
+  margin: 2rem 0 0.65rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.legal p,
+.legal li {
+  color: var(--ink-body);
+  font-size: 1rem;
+}
+
+.legal ul {
+  padding-left: 1.2rem;
+}
+
+.legal a {
+  color: var(--action-deep);
+  font-weight: 650;
+}
+
+.legal-table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.legal table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.legal th,
+.legal td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink-body);
+}
+
+.legal th {
+  color: var(--ink);
+  font-weight: 700;
+  background: rgba(232, 248, 240, 0.65);
+}
+
+.legal tr:last-child td {
+  border-bottom: 0;
+}
+
 .nav-solid {
   position: relative;
   background: rgba(255, 255, 255, 0.72);
@@ -612,11 +769,12 @@ a {
   }
 
   .steps,
+  .fun-points,
   .privacy-grid {
     grid-template-columns: 1fr;
   }
 
-  .nav-links {
+  .nav-links a {
     display: none;
   }
 }

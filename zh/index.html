@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cubuno — 整理相册，也能像打一局小游戏</title>
+    <meta
+      name="description"
+      content="Cubuno 把整理照片变成短时好玩对局。随机清理、滑动只留下喜欢的，涨 XP、点亮连胜——回忆留在你的设备上。"
+    />
+    <meta property="og:title" content="Cubuno" />
+    <meta
+      property="og:description"
+      content="整理相册，也能像打一局小游戏。只留下你喜欢的。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cubuno.com/zh/" />
+    <meta property="og:image" content="https://cubuno.com/assets/app-icon.png" />
+    <link rel="icon" href="../assets/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preload" as="image" href="../assets/mascot.png" />
+    <link rel="preload" as="image" href="../assets/mascot-smile.png" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a class="nav-brand" href="/zh/">
+          <img src="../assets/app-icon.png" alt="" width="36" height="36" />
+          Cubuno
+        </a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="#how">怎么玩</a>
+          <a href="/zh/privacy/">隐私</a>
+          <a href="/zh/support.html">支持</a>
+          <label class="lang-select-wrap">
+            <span class="visually-hidden">语言</span>
+            <select class="lang-select" data-lang-select aria-label="语言">
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+            </select>
+          </label>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="wrap hero-content">
+        <div>
+          <h1 class="brand-mark">Cubuno</h1>
+          <p class="hero-line">整理相册，也能像打一局小游戏</p>
+          <p class="hero-sub">
+            每天玩几局，只留下你喜欢的。滑动整理、涨 XP、点亮连胜火苗——回忆留在你的设备上。
+          </p>
+          <div class="cta-row">
+            <span class="btn btn-store" aria-disabled="true">
+              App Store · 即将上架
+            </span>
+            <span class="btn btn-store" aria-disabled="true">
+              Google Play · 即将上架
+            </span>
+          </div>
+          <p class="cta-note">
+            Cubuno 即将登陆 iPhone 与 Android。
+            <a href="#how">看看怎么玩 →</a>
+          </p>
+        </div>
+        <div class="hero-visual" data-mascot>
+          <div class="mascot-bob">
+            <img
+              class="mascot-open"
+              src="../assets/mascot.png"
+              alt="Cubuno 小熊形象"
+              width="720"
+              height="720"
+              decoding="async"
+            />
+            <img
+              class="mascot-smile"
+              data-mascot-smile
+              src="../assets/mascot-smile.png"
+              alt=""
+              width="720"
+              height="720"
+              decoding="async"
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <div class="wrap">
+        <p class="section-kicker">怎么玩</p>
+        <h2 class="section-title">先来一局随机清理。</h2>
+        <p class="section-lead">
+          别硬扛大扫除。打开「随机清理」：约 10 张随机照片，滑几下，只留下你喜欢的。想按月份慢慢清时，也可以随时切换。
+        </p>
+        <ol class="steps">
+          <li>
+            <strong>主玩法：随机清理</strong>
+            <p>每局约 10 张，适合碎片时间，随时开一局。</p>
+          </li>
+          <li>
+            <strong>滑动做决定</strong>
+            <p>保留、删除或收藏，像刷着玩一样顺手。</p>
+          </li>
+          <li>
+            <strong>随机清理有惊喜</strong>
+            <p>
+              每张下方显示多久之前拍摄和地点，整理时遇见不同时期的瞬间。
+            </p>
+          </li>
+          <li>
+            <strong>也可以按月份整理</strong>
+            <p>想系统清某一段时再选这个。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section privacy" id="fun">
+      <div class="wrap">
+        <p class="section-kicker">越玩越有劲</p>
+        <h2 class="section-title">多整理，多涨 XP。</h2>
+        <p class="section-lead">
+          每张决定涨 XP（经验值）。完成一局即可点亮今日火苗；还想玩就接着滑。
+        </p>
+        <div class="fun-points">
+          <article>
+            <strong>看着自己升级</strong>
+            <p>每张照片的取舍都能攒经验。</p>
+          </article>
+          <article>
+            <strong>点亮连胜火苗</strong>
+            <p>完成一局就打卡；连起来，别让它灭掉。</p>
+          </article>
+          <article>
+            <strong>徽章与背景</strong>
+            <p>解锁徽章，换换主页背景，整理也有成就感。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="privacy">
+      <div class="wrap privacy-grid">
+        <div>
+          <p class="section-kicker">为真实生活设计</p>
+          <h2 class="section-title">照片始终是你的。</h2>
+          <p class="section-lead">
+            只留下你喜欢的，少一点清理负罪感。照片只在本机处理，无需 Cubuno
+            账号，不会上传，也不会拿去投广告。
+          </p>
+          <div class="privacy-note">
+            隐私政策与服务条款由 Pandobal Limited 发布于
+            <a href="/zh/privacy/">cubuno.com/zh/privacy</a>
+            与
+            <a href="/zh/terms/">cubuno.com/zh/terms</a>。
+          </div>
+        </div>
+        <div class="app-card">
+          <img
+            src="../assets/app-icon.png"
+            alt="Cubuno 应用图标"
+            width="192"
+            height="192"
+          />
+          <div>
+            <h3>Cubuno</h3>
+            <p>照片整理 · 短时对局 · 本地优先</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <div>
+          <strong>Cubuno</strong>
+          <p style="margin: 0.35rem 0 0">
+            Pandobal Limited（香港）旗下产品
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="/zh/support.html">支持</a>
+          <a href="/zh/privacy/">隐私</a>
+          <a href="/zh/terms/">条款</a>
+          <a href="mailto:hello@pandobal.com">hello@pandobal.com</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/mascot.js" defer></script>
+  </body>
+</html>

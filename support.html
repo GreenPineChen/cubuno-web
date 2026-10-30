@@ -27,6 +27,13 @@
         <nav class="nav-links" aria-label="Primary">
           <a href="/#how">How it works</a>
           <a href="/support.html">Support</a>
+          <label class="lang-select-wrap">
+            <span class="visually-hidden">Language</span>
+            <select class="lang-select" data-lang-select aria-label="Language">
+              <option value="en" selected>English</option>
+              <option value="zh">中文</option>
+            </select>
+          </label>
         </nav>
       </div>
     </header>
@@ -43,8 +50,9 @@
           <details open>
             <summary>How do I tidy photos?</summary>
             <p>
-              Open Cubuno, pick a time period (or a quick round), then swipe to keep,
-              delete, or favorite. You can switch left-hand mode in Settings.
+              Open Cubuno and start with Quick Tidy (about 10 random photos), or open
+              a month to tidy by time. Swipe to keep, delete, or favorite. You can
+              switch left-hand mode in Settings.
             </p>
           </details>
           <details>
@@ -89,9 +97,9 @@
           </p>
           <p>
             Legal pages:
-            <a href="https://pandobal.com/privacy" rel="noopener">Privacy</a>
+            <a href="/privacy/">Privacy</a>
             ·
-            <a href="https://pandobal.com/terms" rel="noopener">Terms</a>
+            <a href="/terms/">Terms</a>
           </p>
         </div>
       </div>
@@ -109,5 +117,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/i18n.js" defer></script>
   </body>
 </html>
